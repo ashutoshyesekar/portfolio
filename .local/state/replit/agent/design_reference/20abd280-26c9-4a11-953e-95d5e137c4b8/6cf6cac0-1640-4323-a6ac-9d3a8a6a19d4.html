@@ -1,0 +1,564 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Yesekar - Senior DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-dark': '#0F0F0F',
+                        'secondary-dark': '#1A1A1A',
+                        'accent-blue': '#2563EB',
+                        'border-dark': '#2A2A2A',
+                        'text-secondary': '#A1A1A1',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+        .hover-glow:hover {
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-primary-dark text-white font-inter">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-primary-dark/90 backdrop-blur-sm border-b border-border-dark z-50">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-semibold">Ashutosh Yesekar</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-text-secondary hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="text-text-secondary hover:text-white transition-colors">Skills</a>
+                    <a href="#experience" class="text-text-secondary hover:text-white transition-colors">Experience</a>
+                    <a href="#contact" class="text-text-secondary hover:text-white transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 sm:px-8 pt-20">
+        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+            <div class="mb-8">
+                <!-- Professional headshot placeholder -->
+                <div class="w-32 h-32 mx-auto rounded-full bg-secondary-dark border-2 border-accent-blue mb-6 flex items-center justify-center">
+                    <i class="fas fa-user text-4xl text-accent-blue"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-text-secondary bg-clip-text text-transparent">
+                Senior DevOps Engineer
+            </h1>
+            <p class="text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed">
+                Cloud & DevOps Consultant with 5+ years of experience designing scalable infrastructure solutions across Azure, AWS, and GCP
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" class="bg-accent-blue hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors hover-glow">
+                    Get In Touch
+                </a>
+                <a href="#" class="border border-border-dark hover:border-accent-blue text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                    <i class="fas fa-download mr-2"></i>Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 sm:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <h3 class="text-2xl font-semibold mb-6 text-accent-blue">Professional Overview</h3>
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        Experienced Cloud & DevOps Consultant with deep expertise in designing, implementing, and automating cloud infrastructure solutions. Strong focus on building enterprise-grade CI/CD pipelines and implementing Infrastructure as Code (IaC) using modern tools and best practices.
+                    </p>
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        Currently serving as Senior Consultant at FreshGravity, where I design scalable cloud infrastructure for AI/ML applications and lead implementation of DevOps best practices for enterprise clients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/ashutosh-yesekar-8635a9104" class="text-accent-blue hover:text-blue-400 transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-accent-blue hover:text-blue-400 transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-slide-up">
+                    <div class="bg-secondary-dark border border-border-dark rounded-xl p-8">
+                        <h4 class="text-xl font-semibold mb-6">Quick Facts</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Experience</span>
+                                <span class="font-medium">5+ Years</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Specialization</span>
+                                <span class="font-medium">Cloud & DevOps</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Location</span>
+                                <span class="font-medium">Pune, India</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Focus</span>
+                                <span class="font-medium">AI/ML Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 sm:px-8 bg-secondary-dark">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Technical Expertise</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cloud Platforms -->
+                <div class="bg-primary-dark border border-border-dark rounded-xl p-6 hover-glow transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-accent-blue text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">Cloud Platforms</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Azure</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>AWS</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>GCP</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IaC & Automation -->
+                <div class="bg-primary-dark border border-border-dark rounded-xl p-6 hover-glow transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cogs text-accent-blue text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">IaC & Automation</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Terraform</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Ansible</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>ARM Templates</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Containerization -->
+                <div class="bg-primary-dark border border-border-dark rounded-xl p-6 hover-glow transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-docker text-accent-blue text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">Containerization</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Docker</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Kubernetes</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>AKS/EKS</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD -->
+                <div class="bg-primary-dark border border-border-dark rounded-xl p-6 hover-glow transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-sync-alt text-accent-blue text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">CI/CD Pipelines</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Azure DevOps</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Jenkins</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>GitLab CI</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring -->
+                <div class="bg-primary-dark border border-border-dark rounded-xl p-6 hover-glow transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-accent-blue text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">Monitoring & Security</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Splunk</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Dynatrace</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>RBAC</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & ML -->
+                <div class="bg-primary-dark border border-border-dark rounded-xl p-6 hover-glow transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-brain text-accent-blue text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">Data & ML</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Databricks</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Azure ADF</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Azure AI Studio</span>
+                            <div class="w-24 bg-border-dark rounded-full h-2">
+                                <div class="bg-accent-blue h-2 rounded-full skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 sm:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Professional Experience</h2>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-border-dark"></div>
+                
+                <!-- FreshGravity -->
+                <div class="relative flex items-start mb-12">
+                    <div class="absolute left-6 w-4 h-4 bg-accent-blue rounded-full border-4 border-primary-dark"></div>
+                    <div class="ml-20">
+                        <div class="bg-secondary-dark border border-border-dark rounded-xl p-8 hover-glow transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-accent-blue">Senior Consultant</h3>
+                                    <h4 class="text-lg font-medium">FreshGravity</h4>
+                                </div>
+                                <span class="text-text-secondary">Jun 2023 – Present</span>
+                            </div>
+                            <ul class="text-text-secondary space-y-2">
+                                <li>• Designed and implemented scalable, secure cloud infrastructure on Azure and AWS for AI/ML applications</li>
+                                <li>• Deployed and optimized Kubernetes clusters (AKS/EKS) for multi-tenant environments</li>
+                                <li>• Automated end-to-end CI/CD pipelines using Azure DevOps, GitLab, and Bitbucket</li>
+                                <li>• Managed Databricks workflows for secure and cost-efficient data processing</li>
+                                <li>• Led implementation of Infrastructure as Code using Terraform and Ansible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Techolution -->
+                <div class="relative flex items-start mb-12">
+                    <div class="absolute left-6 w-4 h-4 bg-accent-blue rounded-full border-4 border-primary-dark"></div>
+                    <div class="ml-20">
+                        <div class="bg-secondary-dark border border-border-dark rounded-xl p-8 hover-glow transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-accent-blue">Senior DevOps Engineer</h3>
+                                    <h4 class="text-lg font-medium">Techolution</h4>
+                                </div>
+                                <span class="text-text-secondary">Jul 2022 – Jun 2023</span>
+                            </div>
+                            <ul class="text-text-secondary space-y-2">
+                                <li>• Maintained and modernized cloud infrastructure on Azure and AWS</li>
+                                <li>• Integrated automation workflows using ConcourseCI, Terraform, and Ansible</li>
+                                <li>• Administered RabbitMQ clusters ensuring high availability</li>
+                                <li>• Conducted proactive log monitoring and alerting via Splunk</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fujitsu -->
+                <div class="relative flex items-start">
+                    <div class="absolute left-6 w-4 h-4 bg-accent-blue rounded-full border-4 border-primary-dark"></div>
+                    <div class="ml-20">
+                        <div class="bg-secondary-dark border border-border-dark rounded-xl p-8 hover-glow transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-accent-blue">Cloud Infrastructure Engineer / DevOps Engineer</h3>
+                                    <h4 class="text-lg font-medium">Fujitsu India</h4>
+                                </div>
+                                <span class="text-text-secondary">Mar 2020 – Jul 2022</span>
+                            </div>
+                            <ul class="text-text-secondary space-y-2">
+                                <li>• Developed full DevOps toolchain and CI/CD workflows using Jenkins, Git, SonarQube, and Docker</li>
+                                <li>• Designed and deployed Azure-based infrastructure with VM scale sets and security best practices</li>
+                                <li>• Used Kubernetes for container orchestration and microservices deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20 px-6 sm:px-8 bg-secondary-dark">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Education</h2>
+            
+            <div class="bg-primary-dark border border-border-dark rounded-xl p-8 hover-glow transition-all duration-300">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                    <div>
+                        <h3 class="text-xl font-semibold text-accent-blue mb-2">Bachelor of Engineering</h3>
+                        <p class="text-lg">GHRCE, Nagpur | RTMNU</p>
+                        <p class="text-text-secondary">GPA: 8.7 / 10.0</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span class="text-text-secondary">2015 - 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold text-center mb-8">Languages</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-language text-xl text-white"></i>
+                        </div>
+                        <p class="font-medium">English</p>
+                        <p class="text-text-secondary text-sm">Fluent</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-language text-xl text-white"></i>
+                        </div>
+                        <p class="font-medium">Hindi</p>
+                        <p class="text-text-secondary text-sm">Native</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-language text-xl text-white"></i>
+                        </div>
+                        <p class="font-medium">Japanese</p>
+                        <p class="text-text-secondary text-sm">Working Experience</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-language text-xl text-white"></i>
+                        </div>
+                        <p class="font-medium">German</p>
+                        <p class="text-text-secondary text-sm">Basic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 sm:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Get In Touch</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8 text-accent-blue">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-accent-blue text-xl mr-4"></i>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <p class="text-text-secondary">ashutoshyesekar@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent-blue text-xl mr-4"></i>
+                            <div>
+                                <p class="font-medium">Phone</p>
+                                <p class="text-text-secondary">+91-8482937973</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent-blue text-xl mr-4"></i>
+                            <div>
+                                <p class="font-medium">Location</p>
+                                <p class="text-text-secondary">Pune, India - 411044</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin text-accent-blue text-xl mr-4"></i>
+                            <div>
+                                <p class="font-medium">LinkedIn</p>
+                                <a href="https://linkedin.com/in/ashutosh-yesekar-8635a9104" class="text-accent-blue hover:text-blue-400 transition-colors">
+                                    linkedin.com/in/ashutosh-yesekar-8635a9104
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8 text-accent-blue">Send Message</h3>
+                    <form class="space-y-6" data-implementation="Should validate form before submission">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" class="w-full bg-secondary-dark border border-border-dark rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full bg-secondary-dark border border-border-dark rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Subject</label>
+                            <input type="text" class="w-full bg-secondary-dark border border-border-dark rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="5" class="w-full bg-secondary-dark border border-border-dark rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors resize-none" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent-blue hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors hover-glow">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 sm:px-8 bg-secondary-dark border-t border-border-dark">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-text-secondary">© 2024 Ashutosh Yesekar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        (function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Animate skill bars on scroll
+            const skillBars = document.querySelectorAll('.skill-bar');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.width = entry.target.style.width;
+                    }
+                });
+            });
+
+            skillBars.forEach(bar => observer.observe(bar));
+        })();
+
+        // TODO: Implement form validation and submission
+        // TODO: Add contact form backend integration
+        // TODO: Implement resume download functionality
+    </script>
+</body>
+</html>
