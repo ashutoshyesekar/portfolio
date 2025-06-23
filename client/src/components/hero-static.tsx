@@ -11,7 +11,7 @@ export default function HeroStatic() {
   const downloadResume = () => {
     // For GitHub Pages, link directly to the PDF in the assets folder
     const link = document.createElement('a');
-    link.href = '/ashutosh-portfolio/Ashutosh_Yesekar_Latest.pdf';
+    link.href = '/portfolio/Ashutosh_Yesekar_Latest.pdf';
     link.download = 'Ashutosh_Yesekar_Resume.pdf';
     link.target = '_blank';
     document.body.appendChild(link);

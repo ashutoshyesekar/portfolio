@@ -49,7 +49,7 @@ git push -u origin main
 
 ### 4. Update Repository Name (if needed)
 
-If your repository name is different from `ashutosh-portfolio`, update the base path:
+If your repository name is different from `portfolio`, update the base path:
 
 1. Open `vite.config.static.ts`
 2. Change the `base` property to match your repository name:
@@ -77,7 +77,7 @@ If you have a custom domain:
 ## Accessing Your Site
 
 Once deployed, your portfolio will be available at:
-- `https://YOUR_USERNAME.github.io/ashutosh-portfolio/`
+- `https://YOUR_USERNAME.github.io/portfolio/`
 - Or your custom domain if configured
 
 ## Updating Your Portfolio

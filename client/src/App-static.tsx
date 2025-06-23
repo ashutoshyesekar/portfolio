@@ -20,8 +20,8 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={HomeStatic} />
-      <Route path="/ashutosh-portfolio" component={HomeStatic} />
-      <Route path="/ashutosh-portfolio/" component={HomeStatic} />
+      <Route path="/portfolio" component={HomeStatic} />
+      <Route path="/portfolio/" component={HomeStatic} />
       <Route component={NotFound} />
     </Switch>
   );
