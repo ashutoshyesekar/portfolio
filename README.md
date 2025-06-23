@@ -1,144 +1,52 @@
-# Ashutosh Yesekar - Portfolio Website
+# Ashutosh Yesekar - Simple Portfolio
 
-A professional portfolio website for Ashutosh Yesekar, Senior DevOps Engineer with 5+ years of experience in cloud infrastructure, automation, and AI/ML operations.
+A clean, professional portfolio website built with vanilla HTML, CSS, and JavaScript for guaranteed GitHub Pages compatibility.
 
-## 🚀 Features
+## Features
 
-- **Modern Dark Theme**: Professional design with clean aesthetics
-- **Responsive Design**: Optimized for desktop and mobile devices
-- **Interactive Sections**: 
-  - Hero section with professional introduction
-  - About section with career overview
-  - Skills showcase with animated progress bars
-  - Experience timeline with detailed achievements
-  - Education and languages
-  - Contact form with validation
-- **Resume Download**: Direct download functionality for PDF resume
-- **Contact Form**: Functional contact form with backend storage
+- Responsive design that works on all devices
+- Dark professional theme
+- Smooth scrolling navigation
+- Animated skill progress bars
+- Contact form with mailto functionality
+- Resume download
+- Professional layout optimized for DevOps roles
 
-## 🛠 Tech Stack
+## GitHub Pages Deployment
 
-### Frontend
-- **React 18** with TypeScript
-- **Vite** for fast development and builds
-- **Tailwind CSS** for styling
-- **shadcn/ui** components
-- **TanStack Query** for state management
-- **React Hook Form** with Zod validation
-- **Wouter** for routing
+This version is specifically designed for GitHub Pages and will work immediately:
 
-### Backend
-- **Node.js** with Express.js
-- **TypeScript** with ES modules
-- **Drizzle ORM** for database operations
-- **PostgreSQL** for data storage
-- **Zod** for request validation
+### Quick Setup
 
-## 📦 Installation
+1. Create a new repository named `portfolio` on GitHub
+2. Upload all files from this folder to the repository
+3. Go to repository Settings → Pages
+4. Select "Deploy from a branch" → "main" → "/ (root)"
+5. Your portfolio will be live at `https://YOUR_USERNAME.github.io/portfolio/`
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd ashutosh-portfolio
-   ```
+### Files Included
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+- `index.html` - Main portfolio page
+- `style.css` - All styling and responsive design
+- `script.js` - Interactive functionality
+- `Ashutosh_Yesekar_Latest.pdf` - Resume file
+- `README.md` - This documentation
 
-3. **Set up environment variables**
-   Create a `.env` file with your database configuration:
-   ```bash
-   DATABASE_URL=your_postgresql_connection_string
-   ```
+## Customization
 
-4. **Run database migrations** (if using PostgreSQL)
-   ```bash
-   npm run db:push
-   ```
+To update your information:
 
-5. **Start development server**
-   ```bash
-   npm run dev
-   ```
+1. Edit contact details in `index.html`
+2. Update experience, skills, and education sections
+3. Replace the resume PDF file
+4. Modify colors in `style.css` if desired
 
-The application will be available at `http://localhost:5000`
+## Why This Version Works
 
-## 🏗 Project Structure
+- No build process required
+- No dependencies to install
+- Pure HTML/CSS/JS that GitHub Pages serves directly
+- Optimized file structure
+- All assets included
 
-```
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   └── lib/            # Utility functions
-├── server/                 # Backend Express application
-│   ├── index.ts           # Server entry point
-│   ├── routes.ts          # API routes
-│   ├── storage.ts         # Data storage interface
-│   └── vite.ts            # Vite integration
-├── shared/                 # Shared types and schemas
-│   └── schema.ts          # Database schemas and types
-└── attached_assets/       # Static assets (resume, etc.)
-```
-
-## 🚀 Deployment
-
-### Production Build
-```bash
-npm run build
-npm start
-```
-
-### Environment Variables
-- `DATABASE_URL`: PostgreSQL connection string
-- `NODE_ENV`: Set to 'production' for production builds
-
-## 📋 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run db:push` - Push database schema changes
-- `npm run db:studio` - Open Drizzle Studio
-
-## 🎨 Customization
-
-### Color Scheme
-The color scheme can be customized in `client/src/index.css`:
-- Primary colors for backgrounds
-- Accent colors for highlights
-- Text colors for readability
-
-### Content Updates
-- Update personal information in the component files under `client/src/components/`
-- Replace the resume file in `attached_assets/`
-- Modify experience, skills, and education data in respective components
-
-## 📧 Contact Form
-
-The contact form stores submissions in the database. Messages can be retrieved via the API endpoint `/api/contact/messages` for admin review.
-
-## 🔒 Security Features
-
-- Input validation using Zod schemas
-- SQL injection prevention with Drizzle ORM
-- CORS configuration for production
-- Environment variable protection
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 📄 License
-
-This project is for personal portfolio use. Feel free to use as a template for your own portfolio.
-
----
-
-**Contact**: ashutoshyesekar@gmail.com | [LinkedIn](https://linkedin.com/in/ashutosh-yesekar)
+This portfolio will load immediately on GitHub Pages without any configuration issues.
