@@ -42,7 +42,10 @@ git push -u origin main
 2. Click on "Settings" tab
 3. Scroll down to "Pages" in the left sidebar
 4. Under "Source", select "GitHub Actions"
-5. The workflow will automatically trigger on your next push
+5. Make sure your repository is public (required for free GitHub Pages)
+6. The workflow will automatically trigger on your next push
+
+**Important**: If the build fails initially, go to the "Actions" tab in your repository to see detailed error logs.
 
 ### 4. Update Repository Name (if needed)
 
@@ -102,6 +105,8 @@ To update your portfolio:
 ### Build Fails
 - Check the Actions tab in your GitHub repository for error details
 - Ensure all dependencies are in `package-static.json`
+- Verify the repository is public (private repos need GitHub Pro for Pages)
+- Check that the workflow has proper permissions in repository settings
 
 ### 404 Errors
 - Verify the repository name in `vite.config.static.ts` base path
