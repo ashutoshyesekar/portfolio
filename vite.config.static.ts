@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   root: path.resolve(__dirname, "client"),
-  base: "/ashutosh-portfolio/", // GitHub Pages repository name
+  base: "/portfolio/", // GitHub Pages repository name
   build: {
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
